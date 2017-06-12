@@ -1,0 +1,14 @@
+option java_package = "com.ww.demo.protobuf";
+option java_outer_classname = "PlayerModel";
+
+message PBPlayer {
+	required int64 playerId = 1;
+	required int32 age = 2;
+	required string name = 3;
+	repeated int32 skills = 4;
+}
+
+message PBReource {
+	required int64 gold = 1;
+	required int32 enery = 2;
+}
